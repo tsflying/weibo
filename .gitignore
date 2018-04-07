@@ -1,0 +1,86 @@
+target
+.settings
+logs
+.idea
+*.iml
+*.ipr
+*.iws
+*.class
+.classpath
+.project
+bin
+*.svn
+*/lib/*
+.DS_Store
+scpFile.sh
+xx_*.sh
+# General CodeKit files to ignore
+*.codekit
+.metadata/
+/min
+######### frond end ignore
+#crm gulp test
+homethy-crm-web/src/main/webapp/WEB-INF/static/src/*
+homethy-crm-web/src/main/webapp/WEB-INF/static/combine/*
+homethy-crm-web/src/main/webapp/WEB-INF/static/dist/*
+homethy-crm-web/src/main/webapp/WEB-INF/static/node_modules/*
+homethy-crm-web/src/main/webapp/WEB-INF/static/gulpfile.js
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+Status API Training Shop Blog About Pricing
+
+# webpack
+webpack.config.js
+webpack.production.config.js
+package.json
+.less
+.jsx
+*/template/*
+*/**/*.swap
+
+#homethy site web deploy package shell
+homethy-agent-site-web/src/main/resources/conf.properties
+homethy-agent-site-web/src/main/resources/redis.properties
+homethy-official-website/src/main/resources/conf.properties
+homethy-official-website/src/main/resources/redis.properties
+homethy-agent-site-service/less_publish.sh
+homethy-agent-site-service/publish.sh
+homethy-agent-site-service/publish_online.sh
+homethy-agent-site-service/publish_static_online.sh
+homethy-app/homethy-app.ipr
+homethy-app/homethy-app.iws
+homethy-test-tool/homethy-tool.ipr
+homethy-test-tool/homethy-tool.iws
+scp-crm-web.sh
+scp-app.sh
+
+#dripmail run data
+application.log
+application_mapping.data
+dripmail_mapping.data
+template.log
+template_mapping.data
+watcher.log
+watcher_mapping.data
+task.log
+task_mapping.data
+auto_rule.log
+auto_rule_mapping.data
+auto_rule_mapping_mapping.data
+
+
+#newhome
+homethy-newhome-web/src/main/resources/conf.properties
+homethy-newhome-web/src/main/resources/redis.properties
+
+twitter/
+log.txt
+
