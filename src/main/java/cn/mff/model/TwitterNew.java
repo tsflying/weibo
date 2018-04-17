@@ -1,5 +1,11 @@
-package cn.fhj.twitter;
+package cn.mff.model;
 
+import cn.fhj.TwitterFrm;
+import cn.fhj.twitter.Conversation;
+import cn.fhj.twitter.Grid;
+import cn.fhj.util.*;
+import cn.mff.util.ConfigUtils;
+import cn.mff.util.HttpsUtilNew;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.json.JSONException;
@@ -7,68 +13,60 @@ import org.json.JSONObject;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
-import cn.fhj.TwitterFrm;
-import cn.fhj.util.DateUtil;
-import cn.fhj.util.HtmUtil;
-import cn.fhj.util.HttpsUtil;
-import cn.fhj.util.IoUtil;
-import cn.fhj.util.StringUtil;
-import cn.fhj.util.ThreadUtil;
+public class TwitterNew {
+  private String LOC_HOME = "c:\\twitter\\";
 
-public class Twitter {
-  private static String LOC_HOME = "c:\\twitter\\";
+  public WeiboNew weibo;
 
-  public static Weibo weibo;
-
-  public static String getDataFold() {
-    return Twitter.LOC_HOME + name + "/data/";
+  public String getDataFold() {
+    return LOC_HOME + name + "/data/";
   }
 
-  private static final String MAX_ID = "MAX_ID";
+  private final String MAX_ID = "MAX_ID";
 
-  private static String getConfigFile() {
+  private String getConfigFile() {
     return LOC_HOME + name + "/config.json";
   }
 
-  public static final String HOME = "https://twitter.com/";
+  public final String HOME = "https://twitter.com/";
 
-  protected static String name = "fangshimin";
+  protected String name = "fangshimin";
 
-  protected static String maxId = null;
+  protected String maxId = null;
 
-  public static void initMaxId() {
-    String idStr = readConfig(MAX_ID);
+  private Config config;
+
+  private HttpsUtilNew httpsUtilNew;
+
+  public void initMaxId() {
+    String idStr = config.getMaxId();
     if (idStr != null) {
       maxId = idStr;
       return;
     }
-    String html = HttpsUtil.getTwitterInstance().doGetForString(HOME + name);
+    String html = httpsUtilNew.getTwitterInstance().doGetForString(HOME + name);
     Elements grids = HtmUtil.getBody(html).getElementById("stream-items-id").getElementsByClass
         ("js-stream-item");
 
     Element grid = grids.size() > 10 ? grids.get(10) : grids.last();
     maxId = grid.attr("data-item-id");
-    saveConfig(MAX_ID, maxId);
+//    saveConfig(MAX_ID, maxId);
+    ConfigUtils.updateMaxId(config.getId(),maxId);
   }
 
-  public static String readConfig(String key) {
+  public String readConfig(String key) {
     Map<String, String> map = readConfig();
     return map.get(key);
   }
 
-  public static Map<String, String> readConfig() {
+  public Map<String, String> readConfig() {
     Map<String, String> map = new HashMap();
     File file = new File(getConfigFile());
     if (file.exists())
@@ -82,7 +80,7 @@ public class Twitter {
     return map;
   }
 
-  public static void saveConfig(String key, Object value) {
+  public void saveConfig(String key, Object value) {
     Map<String, String> map = readConfig();
     map.put(key, String.valueOf(value));
     StringBuilder sb = new StringBuilder();
@@ -104,12 +102,17 @@ public class Twitter {
     IoUtil.write(sb.toString(), file);
   }
 
-  private final static Log log = LogFactory.getLog(Twitter.class);
+  private final static Log log = LogFactory.getLog(TwitterNew.class);
 
-  public static void start(String name, String dir, Weibo weibo) {
-    Twitter.name = name;
-    Twitter.LOC_HOME = dir;
-    Twitter.weibo = weibo;
+  public TwitterNew(String name, String dir, WeiboNew weibo, Config config,HttpsUtilNew httpsUtilNew) {
+    this.name = name;
+    this.LOC_HOME = dir;
+    this.weibo = weibo;
+    this.config = config;
+    this.httpsUtilNew = httpsUtilNew;
+  }
+
+  public void start() {
     initMaxId();
     new Thread() {
       @Override
@@ -120,11 +123,11 @@ public class Twitter {
             if (!refresh()) {
               return;
             }
-            Twitter.weibo.refresh();
+            weibo.refresh();
           } catch (Exception e) {
             log.error(e.getMessage(), e);
           }
-          ThreadUtil.sleep(Twitter.weibo.getSleep());
+          ThreadUtil.sleep(weibo.getSleep());
         }
       }
 
@@ -137,7 +140,7 @@ public class Twitter {
     return !sending;
   }
 
-  protected static boolean refresh() throws Exception {
+  protected boolean refresh() throws Exception {
     TwitterFrm.setMessage(DateUtil.format("HH:mm:ss") + " 抓取新微博...");
     String html = readHtml();
     List<Grid> grids = readGrids(html);
@@ -158,7 +161,8 @@ public class Twitter {
               saveFailure(grid);
             }
           }
-          saveConfig(MAX_ID, maxId);
+          ConfigUtils.updateMaxId(config.getId(),maxId);
+//          saveConfig(MAX_ID, maxId);
           sending = false;
           TwitterFrm.setMessage("微博发成功：" + weiboId);
           weibo.sleepAfterSend();
@@ -174,7 +178,7 @@ public class Twitter {
     return true;
   }
 
-  private static void checkDelete() {
+  private void checkDelete() {
     long time = System.currentTimeMillis();
     long timeout = 1000 * 60 * 5;
     List<Grid> tobeRemoved = new ArrayList();
@@ -190,9 +194,9 @@ public class Twitter {
     weibo.getRecentGrids().removeAll(tobeRemoved);
   }
 
-  public static boolean checkDelete(Grid grid) {
-    HttpsUtil util = HttpsUtil.getTwitterInstance();
-    String s = util.doGetForString(HOME + name + "/status/" + grid.getId());
+  public boolean checkDelete(Grid grid) {
+//    HttpsUtil util = HttpsUtil.getTwitterInstance();
+    String s = httpsUtilNew.doGetForString(HOME + name + "/status/" + grid.getId());
     if (s.indexOf(grid.getId()) < 0) {
       weibo.delete(grid.getSinaId());
       return true;
@@ -200,7 +204,7 @@ public class Twitter {
     return false;
   }
 
-  public static void saveGrid(Grid grid, String pic) {
+  public void saveGrid(Grid grid, String pic) {
     if (pic != null) {
       String newPic = getDataFold() + grid.getId() + pic.substring(pic.lastIndexOf('.'));
       new File(pic).renameTo(new File(newPic));
@@ -208,14 +212,14 @@ public class Twitter {
     IoUtil.write(grid.getText(), new File(getDataFold() + grid.getId() + ".txt"));
   }
 
-  public static void saveFailure(Grid grid) {
+  public void saveFailure(Grid grid) {
     String s = grid.getText().length() > 10 ? grid.getText().substring(0, 10) + "..." : grid
         .getText();
     IoUtil.write("新浪微博不让机器人转发：" + s ,
         new File(getDataFold() + (Long.parseLong(grid.getId()) + 1) + ".txt"));
   }
 
-  private static List<Grid> readGrids(String html) {
+  private List<Grid> readGrids(String html) {
     List<Element> gridElements = HtmUtil.getBody(html).getElementsByClass("js-stream-item");
     Collections.reverse(gridElements);
     List<Grid> grids = new ArrayList();
@@ -229,7 +233,7 @@ public class Twitter {
     return grids;
   }
 
-  private static Grid parse(Element ge) {
+  private Grid parse(Element ge) {
     Grid grid = new Grid();
     grid.setId(ge.attr("data-item-id"));
     if (Long.parseLong(maxId) >= Long.parseLong(grid.getId())) {
@@ -252,7 +256,7 @@ public class Twitter {
     return grid;
   }
 
-  protected static boolean grapReply(Element ge, Grid grid) {
+  protected boolean grapReply(Element ge, Grid grid) {
     try {
       Elements elments = ge.getElementsByAttribute("data-expanded-url");
       if (elments.isEmpty()) {
@@ -275,19 +279,19 @@ public class Twitter {
       grid.setText(grid.getText().replaceAll(twitter + name + status + id, ""));
       return true;
     } catch (Exception e) {
-      LogFactory.getLog(Twitter.class).warn("grapReply出错：" + e, e);
+      LogFactory.getLog(TwitterNew.class).warn("grapReply出错：" + e, e);
       return false;
     }
   }
 
-  protected static Grid grap(String id, String name) {
+  protected Grid grap(String id, String name) {
 
     Grid grid = new Grid();
     grid.setId(id);
 
     String post = HOME + name + "/status/" + grid.getId();
-    HttpsUtil util = HttpsUtil.getTwitterInstance();
-    String html = util.doGetForString(post);
+//    HttpsUtil util = HttpsUtil.getTwitterInstance();
+    String html = httpsUtilNew.doGetForString(post);
     Element body = HtmUtil.getBody(html);
     Element ancestors = body.getElementById("ancestors");
     if (ancestors != null) {
@@ -302,7 +306,7 @@ public class Twitter {
     return grid;
   }
 
-  private static void grapConversations(Grid grid, Element ancestors) {
+  private void grapConversations(Grid grid, Element ancestors) {
     // data-item-type="tweet"
     for (Element li : ancestors.getElementById("stream-items-id").getElementsByClass
         ("js-stream-item")) {
@@ -344,14 +348,14 @@ public class Twitter {
     return '@' + name + ':';
   }
 
-  protected static void grapConversation(Grid grid, String name) {
-    HttpsUtil util = HttpsUtil.getTwitterInstance();
-    String html = util.doGetForString(HOME + name + "/status/" + grid.getId());
+  protected void grapConversation(Grid grid, String name) {
+//    HttpsUtil util = HttpsUtil.getTwitterInstance();
+    String html = httpsUtilNew.doGetForString(HOME + name + "/status/" + grid.getId());
     Element body = HtmUtil.getBody(html);
-    grapConversations(grid, util, body);
+    grapConversations(grid, httpsUtilNew, body);
   }
 
-  private static void grapConversations(Grid grid, HttpsUtil util, Element body) {
+  private void grapConversations(Grid grid, HttpsUtilNew util, Element body) {
     for (Element li : body.getElementById("stream-items-id").getElementsByClass("js-stream-item")) {
       Element div = li.child(0);
       Elements quoteTwts = div.getElementsByClass("QuoteTweet-container");
@@ -370,7 +374,7 @@ public class Twitter {
     }
   }
 
-  private static void grapQuote(Grid grid, Element div) {
+  private void grapQuote(Grid grid, Element div) {
     grapPic(grid, div);
     String owner = div.getElementsByClass("QuoteTweet-fullname").text().replaceAll("\\s+", "");
     Element content = div.getElementsByClass("QuoteTweet-text").first();
@@ -378,12 +382,12 @@ public class Twitter {
     grid.addConversation(owner, content.text());
   }
 
-  public static void grapCoversationPic(Grid grid, Element li, Element gli) {
+  public void grapCoversationPic(Grid grid, Element li, Element gli) {
     Elements as = gli.getElementsByTag("a");
     if (!as.isEmpty() && as.last().text().startsWith("pic.twitter.com/")) {
       String path = li.attr("data-permalink-path");
       String status = "/status/";
-      Element body = HtmUtil.getBody(HttpsUtil.getTwitterInstance().doGetForString
+      Element body = HtmUtil.getBody(httpsUtilNew.doGetForString
           ("https://twitter.com" + path));
       Elements elements = body.getElementsByAttributeValue("data-tweet-id",
           path.substring(path.lastIndexOf(status) + status.length(), path.length()));
@@ -394,7 +398,7 @@ public class Twitter {
     }
   }
 
-  public static String grapText(Element textElement) {
+  public String grapText(Element textElement) {
     textElement = textElement.getElementsByClass("js-tweet-text").get(0);
     textElement.getElementsByAttributeValue("data-pre-embedded", "true").remove();
     textElement.getElementsByClass("tco-ellipsis").remove();
@@ -421,18 +425,18 @@ public class Twitter {
     return textElement.text();
   }
 
-  public static void replaceWithName(Element ate) {
+  public void replaceWithName(Element ate) {
     try {
       String no = ate.text();
-      HttpsUtil util = HttpsUtil.getTwitterInstance();
-      String html = util.doGetForString("https://twitter.com/" + no);
+//      HttpsUtil util = HttpsUtil.getTwitterInstance();
+      String html = httpsUtilNew.doGetForString("https://twitter.com/" + no);
       String title = "<title>";
       String name = html.substring(html.indexOf(title) + title.length(), html.indexOf("(@")).trim();
       if (name.indexOf(' ') < 0) {
         ate.text(name);
       }
     } catch (Exception e) {
-      LogFactory.getLog(Twitter.class).warn("获取账号出错：" + ate.text(), e);
+      LogFactory.getLog(TwitterNew.class).warn("获取账号出错：" + ate.text(), e);
     }
   }
 
@@ -442,7 +446,7 @@ public class Twitter {
     }
   }
 
-  protected static String readHtml() throws Exception {
+  protected String readHtml() throws Exception {
     // data-retweet-id="574437716307267584"
     String currentId = maxId;// "-1";//
     // "573834450653446145";//574104614695362560
@@ -465,9 +469,9 @@ public class Twitter {
     // +
     // "&include_available_features=1&include_entities=1&include_new_items_bar=true"
     // + "&interval=30000&latent_count=0&since_id=" + currentId;
-    HttpsUtil util = HttpsUtil.getTwitterInstance();
+//    HttpsUtil util = HttpsUtil.getTwitterInstance();
 
-    String retVal = util.doGetForString(url);
+    String retVal = httpsUtilNew.doGetForString(url);
 
     // IoUtil.write(util.doGetForStream("https://pbs.twimg.com/media/B_QnDLXU8AABETf.jpg"),
     // "c:/8AABETf.jpg");
