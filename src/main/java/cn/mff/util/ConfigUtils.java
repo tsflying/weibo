@@ -51,7 +51,7 @@ public class ConfigUtils {
         }
     }
 
-    public static void updateMaxId(int id,String value){
+    public synchronized static void updateMaxId(int id,String value){
         for (Config config:configList){
             if (id == config.getId()){
                 config.setMaxId(value);
@@ -61,7 +61,7 @@ public class ConfigUtils {
 
     }
 
-    private static void saveConfigs(){
+    private synchronized static void saveConfigs(){
         File file = new File(getConfigFile());
         if (!file.exists()) {
             try {

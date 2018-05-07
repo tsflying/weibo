@@ -1,0 +1,1154 @@
+2018-04-06 22:37:18,204-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-06 22:37:18,265-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-06 22:37:18,272-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-06 22:37:18,273-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-06 22:37:31,672-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-06 22:38:47,852-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.63.180.173] failed: Operation timed out (Connection timed out)
+java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.63.180.173] failed: Operation timed out (Connection timed out)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.63.180.173] failed: Operation timed out (Connection timed out)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:239)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 16 more
+2018-04-07 20:14:20,599-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:14:20,686-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:14:20,689-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:14:20,690-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:15:36,258-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:15:36,332-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:15:36,337-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:15:36,338-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:17:52,776-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:17:52,779-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:17:53,184-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:17:53,185-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:17:53,591-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:17:53,591-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:17:53,971-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:32)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+Caused by: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-07 20:17:53,975-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:22:24,063-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:22:24,064-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:22:24,439-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:22:24,439-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:22:24,813-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:22:24,814-[TS] INFO Thread-1 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:22:25,193-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:32)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+Caused by: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-07 20:22:25,195-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:27:10,761-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:27:10,766-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:27:11,521-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:27:11,526-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:27:12,195-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:27:12,200-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:27:52,653-[TS] ERROR Thread-2 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:32)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+Caused by: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-07 20:27:52,654-[TS] INFO Thread-2 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:30:00,440-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:30:00,440-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:30:00,813-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:30:00,814-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:30:01,182-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443: The target server failed to respond
+2018-04-07 20:30:01,182-[TS] INFO Thread-3 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://weibo.cn:443
+2018-04-07 20:30:01,550-[TS] ERROR Thread-3 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+java.lang.RuntimeException: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:32)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+Caused by: org.apache.http.NoHttpResponseException: weibo.cn:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-07 20:30:01,551-[TS] INFO Thread-3 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:30:24,356-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:30:24,451-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:30:24,453-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:30:24,454-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:34:32,361-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:34:32,421-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:34:32,426-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:34:32,427-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:34:52,187-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:34:54,445-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:36:03,903-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:36:03,905-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:36:25,567-[TS] ERROR Thread-2 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:36:25,568-[TS] INFO Thread-2 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:36:39,707-[TS] ERROR Thread-3 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:36:39,708-[TS] INFO Thread-3 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:36:59,196-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:36:59,289-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:36:59,291-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:36:59,291-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:37:06,828-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:37:06,829-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:37:42,023-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:37:42,024-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:39:04,122-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:39:04,194-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:39:04,200-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:39:04,201-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:46:21,973-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:46:21,975-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:48:05,192-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:48:05,193-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:48:52,029-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:48:52,122-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:48:52,124-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:48:52,131-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:50:07,726-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-07 20:52:20,355-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:52:20,440-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:52:20,442-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:52:20,442-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:53:17,264-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:53:17,266-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:53:38,608-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-07 20:54:29,193-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:54:29,234-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:54:29,238-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:54:29,239-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:55:01,145-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-07 20:57:15,169-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-07 20:57:15,268-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-07 20:57:15,269-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-07 20:57:15,270-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-07 20:57:31,031-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:57:31,033-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:58:07,515-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-07 20:58:07,516-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-07 20:58:23,388-[TS] INFO Thread-2 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-07 20:58:38,696-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://52.79.54.50:1443->https://twitter.com:443: Connection reset
+2018-04-07 20:58:38,703-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://twitter.com:443
+2018-04-07 20:58:38,757-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://52.79.54.50:1443->https://twitter.com:443: Connection reset
+2018-04-07 20:58:38,762-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://twitter.com:443
+2018-04-07 20:58:38,827-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://52.79.54.50:1443->https://twitter.com:443: Connection reset
+2018-04-07 20:58:38,832-[TS] INFO Thread-2 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://52.79.54.50:1443->https://twitter.com:443
+2018-04-07 20:58:44,078-[TS] ERROR Thread-2 cn.fhj.TwitterFrm - java.net.SocketException: Connection reset
+java.lang.RuntimeException: java.net.SocketException: Connection reset
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-08 00:28:06,748-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 00:28:06,911-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 00:28:06,959-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 00:28:06,965-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 00:28:22,362-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 00:28:22,415-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 00:28:22,420-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 00:28:22,421-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 00:29:21,636-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-08 00:30:22,037-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:247)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:252)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:318)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:309)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:244)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-08 21:10:08,746-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:10:08,828-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:10:08,838-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:10:08,839-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:12:24,125-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-08 21:16:19,117-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-08 21:16:44,732-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:16:44,861-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:16:44,864-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:16:44,865-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:16:54,989-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-08 21:16:54,990-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-08 21:17:38,568-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:17:38,671-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:17:38,677-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:17:38,678-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:17:54,875-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-08 21:20:11,147-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-08 21:20:41,519-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:20:41,636-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:20:41,646-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:20:41,651-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:21:09,559-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-08 21:22:49,708-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-08 21:23:27,082-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:23:27,206-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:23:27,208-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:23:27,209-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:23:42,956-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:23:43,057-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:23:43,061-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:23:43,064-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:24:00,413-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-08 21:24:00,415-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-08 21:24:20,865-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-08 21:24:20,927-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-08 21:24:20,928-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-08 21:24:20,934-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-08 21:24:45,220-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-08 21:29:30,404-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-09 19:42:32,369-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 19:42:32,447-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 19:42:32,455-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 19:42:32,456-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 19:44:38,644-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 19:44:38,669-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 19:44:38,671-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 19:44:38,679-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 19:45:15,276-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 19:46:05,825-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 19:46:05,919-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 19:46:05,922-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 19:46:05,924-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 19:46:18,086-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-09 19:46:18,088-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-09 19:46:55,008-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 19:48:50,987-[TS] ERROR Thread-1 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-09 19:49:45,650-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 19:49:45,730-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 19:49:45,732-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 19:49:45,733-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 19:50:22,561-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 19:52:33,557-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-09 19:52:50,090-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 19:52:50,146-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 19:52:50,151-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 19:52:50,152-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 19:53:27,086-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 19:55:12,919-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - java.net.SocketTimeoutException: Read timed out
+java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.createTunnelToTarget(MainClientExec.java:455)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-09 20:18:09,959-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 20:18:10,058-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 20:18:10,060-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 20:18:10,061-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 20:20:56,152-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 20:21:09,007-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443: socks protocol is not supported
+2018-04-09 20:21:09,017-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443
+2018-04-09 20:21:09,024-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443: socks protocol is not supported
+2018-04-09 20:21:09,030-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443
+2018-04-09 20:21:09,036-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443: socks protocol is not supported
+2018-04-09 20:21:09,041-[TS] INFO Thread-0 org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->socks://127.0.0.1:1080->https://twitter.com:443
+2018-04-09 20:21:14,328-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.UnsupportedSchemeException: socks protocol is not supported
+java.lang.RuntimeException: org.apache.http.conn.UnsupportedSchemeException: socks protocol is not supported
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:246)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:251)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.UnsupportedSchemeException: socks protocol is not supported
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:98)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:371)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:317)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:308)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:243)
+	... 4 more
+2018-04-09 20:26:39,624-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 20:26:39,710-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 20:26:39,712-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 20:26:39,713-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 20:27:24,440-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 20:28:49,836-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:247)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:252)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:318)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:309)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:244)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-09 20:32:58,080-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 20:32:58,137-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 20:32:58,139-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 20:32:58,140-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 20:33:56,133-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 20:35:01,222-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:247)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:252)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:318)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:309)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:244)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-09 21:16:50,193-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:16:50,291-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:16:50,293-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:16:50,294-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:17:01,193-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:17:01,254-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:17:01,258-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:17:01,259-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:17:32,584-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:17:32,671-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:17:32,673-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:17:32,674-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:18:08,397-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 21:19:48,114-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/67.228.74.123] failed: Operation timed out (Connection timed out)
+java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/67.228.74.123] failed: Operation timed out (Connection timed out)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:248)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:253)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/67.228.74.123] failed: Operation timed out (Connection timed out)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:321)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:310)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:245)
+	... 4 more
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:239)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 16 more
+2018-04-09 21:20:11,812-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:20:11,873-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:20:11,880-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:20:11,881-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:20:45,784-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 21:22:09,520-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:248)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:253)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:321)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:310)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:245)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-09 21:26:57,950-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:26:58,031-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:26:58,032-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:26:58,033-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:27:23,532-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 21:28:24,865-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:247)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:252)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:318)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:309)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:244)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-09 21:29:37,574-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-09 21:29:37,642-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-09 21:29:37,648-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-09 21:29:37,649-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-09 21:30:07,647-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-09 21:31:08,153-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:247)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:252)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:275)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:254)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:318)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:309)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:244)
+	... 4 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 22 more
+2018-04-09 21:55:50,402-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443: The target server failed to respond
+2018-04-09 21:55:50,408-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443
+2018-04-09 21:56:50,812-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443: The target server failed to respond
+2018-04-09 21:56:50,814-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443
+2018-04-09 21:57:51,229-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443: The target server failed to respond
+2018-04-09 21:57:51,229-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://175.42.129.110:22175->https://www.taobao.com:443
+2018-04-09 22:01:07,538-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://175.42.129.110:22175->https://twitter.com:443: The target server failed to respond
+2018-04-09 22:01:07,544-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://175.42.129.110:22175->https://twitter.com:443
+2018-04-09 22:03:30,351-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.191:80->https://google.com:443: Connection reset
+2018-04-09 22:03:30,354-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.191:80->https://google.com:443
+2018-04-09 22:03:30,403-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.191:80->https://google.com:443: Connection reset
+2018-04-09 22:03:30,404-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.191:80->https://google.com:443
+2018-04-09 22:03:30,451-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.191:80->https://google.com:443: Connection reset
+2018-04-09 22:03:30,452-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.191:80->https://google.com:443
+2018-04-09 22:04:51,933-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.129:80->https://twitter.com:443: Connection reset
+2018-04-09 22:04:51,937-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.129:80->https://twitter.com:443
+2018-04-09 22:04:51,984-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.129:80->https://twitter.com:443: Connection reset
+2018-04-09 22:04:51,985-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.129:80->https://twitter.com:443
+2018-04-09 22:04:52,031-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://192.155.185.129:80->https://twitter.com:443: Connection reset
+2018-04-09 22:04:52,032-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://192.155.185.129:80->https://twitter.com:443
+2018-04-09 22:07:33,917-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://14.141.216.6:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:07:33,922-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://14.141.216.6:3128->https://twitter.com:443
+2018-04-09 22:07:33,969-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://14.141.216.6:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:07:33,970-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://14.141.216.6:3128->https://twitter.com:443
+2018-04-09 22:07:34,016-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://14.141.216.6:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:07:34,017-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://14.141.216.6:3128->https://twitter.com:443
+2018-04-09 22:08:06,691-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://197.210.252.39:8080->https://twitter.com:443: Connection reset
+2018-04-09 22:08:06,695-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://197.210.252.39:8080->https://twitter.com:443
+2018-04-09 22:08:06,746-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://197.210.252.39:8080->https://twitter.com:443: Connection reset
+2018-04-09 22:08:06,747-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://197.210.252.39:8080->https://twitter.com:443
+2018-04-09 22:08:06,798-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://197.210.252.39:8080->https://twitter.com:443: Connection reset
+2018-04-09 22:08:06,799-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://197.210.252.39:8080->https://twitter.com:443
+2018-04-09 22:24:36,292-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://197.210.252.39:8080->https://www.taobao.com:443: Connection reset
+2018-04-09 22:24:36,298-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://197.210.252.39:8080->https://www.taobao.com:443
+2018-04-09 22:24:53,868-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://197.210.252.39:8080->https://www.taobao.com:443: Connection reset
+2018-04-09 22:24:53,869-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://197.210.252.39:8080->https://www.taobao.com:443
+2018-04-09 22:27:31,886-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:27:31,890-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://twitter.com:443
+2018-04-09 22:27:31,937-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:27:31,937-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://twitter.com:443
+2018-04-09 22:27:31,990-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://twitter.com:443: Connection reset
+2018-04-09 22:27:31,990-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://twitter.com:443
+2018-04-09 22:28:04,351-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443: Connection reset
+2018-04-09 22:28:04,354-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443
+2018-04-09 22:28:04,403-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443: Connection reset
+2018-04-09 22:28:04,403-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443
+2018-04-09 22:28:04,453-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443: Connection reset
+2018-04-09 22:28:04,454-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443
+2018-04-09 22:29:34,933-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443: The target server failed to respond
+2018-04-09 22:29:34,938-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {tls}->http://82.165.181.78:3128->https://www.google.com.hk:443
+2018-04-09 22:36:14,631-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://www.google.com:80: The target server failed to respond
+2018-04-09 22:36:14,637-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {}->http://www.google.com:80
+2018-04-09 22:37:32,219-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://www.google.com:80: The target server failed to respond
+2018-04-09 22:37:32,220-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {}->http://www.google.com:80
+2018-04-09 22:38:32,663-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://www.google.com:80: The target server failed to respond
+2018-04-09 22:38:32,664-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {}->http://www.google.com:80
+2018-04-09 23:04:41,759-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:04:41,765-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-09 23:04:41,879-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:04:41,880-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-09 23:04:41,992-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:04:41,992-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-09 23:10:42,845-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:10:42,848-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-09 23:10:42,951-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:10:42,951-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-09 23:10:43,053-[TS] INFO main org.apache.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://twitter.com:443: Connection refused (Connection refused)
+2018-04-09 23:10:43,054-[TS] INFO main org.apache.http.impl.execchain.RetryExec - Retrying request to {s}->https://twitter.com:443
+2018-04-10 22:02:12,166-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-10 22:02:12,272-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-10 22:02:12,275-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-10 22:02:12,276-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-10 22:02:27,363-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-10 22:02:48,470-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:248)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:253)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:322)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:310)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:245)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:239)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 16 more
+2018-04-10 22:06:16,786-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-10 22:06:16,850-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-10 22:06:16,854-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-10 22:06:16,855-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-10 22:06:44,983-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-10 22:06:54,775-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:248)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:253)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/69.171.224.12] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:323)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:310)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:245)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:239)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 16 more
+2018-04-10 22:21:19,239-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-10 22:21:19,383-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-10 22:21:19,391-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-10 22:21:19,393-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-10 22:22:18,538-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-10 22:22:18,539-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-10 22:22:53,273-[TS] ERROR Thread-1 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-10 22:22:53,274-[TS] INFO Thread-1 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-10 22:23:06,013-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-10 22:23:06,097-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-10 22:23:06,099-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-10 22:23:06,101-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-10 22:23:31,817-[TS] ERROR Thread-0 cn.fhj.twitter.SinaWeibo - java.lang.RuntimeException: No found st,maybe not logined
+java.lang.RuntimeException: No found st,maybe not logined
+	at cn.fhj.twitter.SinaWeibo.getSt(SinaWeibo.java:35)
+	at cn.fhj.twitter.SinaWeibo.<init>(SinaWeibo.java:20)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:204)
+2018-04-10 22:23:31,819-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Failed to login SinaWeibo
+2018-04-10 22:24:00,988-[TS] INFO main cn.fhj.TwitterFrm - 点击开始按钮即可开始转推
+2018-04-10 22:24:01,070-[TS] INFO main cn.fhj.TwitterFrm - 敬请关注
+2018-04-10 22:24:01,072-[TS] INFO main cn.fhj.TwitterFrm - 脑中有科学，心中有道义
+2018-04-10 22:24:01,073-[TS] INFO main cn.fhj.TwitterFrm - 程序制作人：@后军
+2018-04-10 22:24:20,818-[TS] INFO Thread-0 cn.fhj.TwitterFrm - Succes logined SinaWeibo
+2018-04-10 22:25:53,509-[TS] ERROR Thread-0 cn.fhj.TwitterFrm - org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/31.13.78.65] failed: Operation timed out (Connection timed out)
+java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/31.13.78.65] failed: Operation timed out (Connection timed out)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:259)
+	at cn.fhj.util.HttpsUtil.doGetForString(HttpsUtil.java:264)
+	at cn.fhj.twitter.Twitter.initMaxId(Twitter.java:57)
+	at cn.fhj.twitter.Twitter.start(Twitter.java:113)
+	at cn.fhj.TwitterFrm$3$1.run(TwitterFrm.java:209)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to twitter.com:443 [twitter.com/31.13.78.65] failed: Operation timed out (Connection timed out)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at cn.fhj.util.HttpsUtil.execute(HttpsUtil.java:334)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:321)
+	at cn.fhj.util.HttpsUtil.doGet(HttpsUtil.java:256)
+	... 4 more
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:239)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 16 more

@@ -230,6 +230,8 @@ public class HttpsUtil {
             twitterInstance.twitterHeaders.put("x-requested-with", "XMLHttpRequest");
             twitterInstance.twitterHeaders.put("x-twitter-active-user", "yes");
             twitterInstance.twitterHeaders.put("x-twitter-polling", "true");
+            twitterInstance.twitterHeaders.put("referer","https://twitter.com/fangshimin");
+            twitterInstance.twitterHeaders.put("user-agent","Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36");
             return twitterInstance;
         }
     }

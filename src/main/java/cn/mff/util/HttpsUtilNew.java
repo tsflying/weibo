@@ -144,6 +144,8 @@ public class HttpsUtilNew {
         twitterHeaders.put("x-requested-with", "XMLHttpRequest");
         twitterHeaders.put("x-twitter-active-user", "yes");
         twitterHeaders.put("x-twitter-polling", "true");
+        twitterHeaders.put("referer","https://twitter.com/fangshimin");
+        twitterHeaders.put("user-agent","Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36");
     }
 
     public HttpsUtilNew(Proxy proxy, String cks, String domain) {
@@ -228,6 +230,8 @@ public class HttpsUtilNew {
             twitterInstance.twitterHeaders.put("x-requested-with", "XMLHttpRequest");
             twitterInstance.twitterHeaders.put("x-twitter-active-user", "yes");
             twitterInstance.twitterHeaders.put("x-twitter-polling", "true");
+            twitterInstance.twitterHeaders.put("referer","https://twitter.com/fangshimin");
+            twitterInstance.twitterHeaders.put("user-agent","Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36");
             return twitterInstance;
         }
     }
